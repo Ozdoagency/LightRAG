@@ -1,0 +1,13 @@
+llm:
+  provider: openai
+  api_key: ${OPENAI_API_KEY}
+  model: gpt-5-mini
+
+embedder:
+  provider: openai
+  api_key: ${OPENAI_API_KEY}
+  model: text-embedding-3-small
+
+# отключаем ollama
+ollama:
+  enabled: false
