@@ -6,3 +6,7 @@ pyglm
 python-louvain
 scipy
 tk
+lightrag
+python-dotenv
+openai
+tiktoken
