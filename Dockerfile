@@ -1,5 +1,5 @@
 # Build stage
-FROM python:3.12-slim AS builder
+FROM mirror.gcr.io/library/python:3.12-slim AS builder
 
 WORKDIR /app
 
@@ -33,7 +33,7 @@ RUN pip install --user --no-cache-dir openai ollama tiktoken
 RUN pip install --user --no-cache-dir pypdf2 python-docx python-pptx openpyxl
 
 # Final stage
-FROM python:3.12-slim
+FROM mirror.gcr.io/library/python:3.12-slim
 
 WORKDIR /app
 
